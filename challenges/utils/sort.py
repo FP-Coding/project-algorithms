@@ -28,12 +28,3 @@ def merge(first, second):
     merged_string += second[j:]
 
     return merged_string
-
-
-def is_anagram(first_string, second_string):
-    first_string_sorted = sort(first_string.lower())
-    second_string_sorted = sort(second_string.lower())
-    if not first_string or not second_string:
-        return (first_string_sorted, second_string_sorted, False)
-    comparison = first_string_sorted == second_string_sorted
-    return (first_string_sorted, second_string_sorted, comparison)

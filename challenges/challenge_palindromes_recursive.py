@@ -11,7 +11,3 @@ def is_palindrome_recursive(word, low_index, high_index):
             return True
     else:
         return False
-
-
-word = "jarara"
-print(is_palindrome_recursive(word, 0, len(word) - 1))
