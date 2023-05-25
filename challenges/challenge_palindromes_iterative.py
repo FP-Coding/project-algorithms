@@ -1,3 +1,5 @@
 def is_palindrome_iterative(word):
-    """Faça o código aqui."""
-    raise NotImplementedError
+    if not word:
+        return False
+    reversed_string = "".join(reversed(word))
+    return word == reversed_string
